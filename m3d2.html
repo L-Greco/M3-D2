@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="artist.css"> 
+    <title>Eminem Page</title>
+  </head>
+  <body>
+    <div id="header" class="d-none d-sm-block container-fluid  position-relative header  " style="height: inherit;">
+        <img src="https://sm.askmen.com/askmen_gr/photo/default/eminem-featured-image_cxqz.jpg" class="bg-image1">
+         <div  class="row  z1  d-flex align-items-center  "style="height: inherit" >
+          <div  class=" col-6 mx-auto z1 d-flex flex-column justify-content-center" style="min-height: 40vh">    
+             <!-- <p class=" pNumber text-center ">33,000,575 MONTLY LISTENERS</p> -->
+             <h1 class="h1Artist text-center ">Eminem</h1>
+             <div class="d-flex justify-content-center   mt-3"> 
+                 <button type="button" class="btn btn-outline-light  mr-2 border-0 " onclick="fetchEminem()" style="background-color:rgb(29, 185, 84) ;">List Albums</button>
+                 <button type="button" class="btn btn-outline-light  mr-3 darkBtn " >Count Unique</button>
+                 <i class="fas fa-ellipsis-h text-center pt-1"></i>
+             </div>    
+          </div>
+            <!-- <div class="  d-none d-sm-flex container-fluid  justify-content-center z1"style="color: white; position:absolute ;bottom: 1.7rem;left:-1rem" >     
+               <span id="over10" onclick="click1()" class="mr-2 mr-sm-3  highlight z1  ">OVERVIEW</span>
+               <span id="related20" onclick="click2()" class="mr-2 mr-sm-3  highlight ">OTHER ARTISTS</span>
+               <span id="about30" onclick="click3()" class=" highlight ">ABOUT</span>
+            </div>           -->
+        </div>     
+       </div>
+       <main id="related" class="d-none mainMarg px-0  mx-0  px-lg-5 mx-lg-5">
+        <div class="container album-container  ">
+        <h2 class=" d-sm-block albums  mt-5 pt-4 pt-sm-0 mb-2 m-sm-2  ">Songs</h2>
+        <div id="row" class="row mt-0 mt-sm-4" > 
+
+        </div>
+    </div>
+       </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="index.js"></script>    
+  </body>
+</html>
