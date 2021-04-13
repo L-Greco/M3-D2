@@ -1,4 +1,5 @@
 let songs = []
+const songAudio = document.getElementById("audio")
 window.onload = () => {
     fetchAlbums()
 }
@@ -35,24 +36,28 @@ const fetchEminem = function () {
         for (let i = 0; i <songs.length; i++){
             const song = songs[i]
             const songDiv = document.createElement("div")
-            songDiv.classList.add("col-12","col-sm-6","col-md-3","col-lg-2","pr-0","pl-0","pl-sm-2","text-center")
+            songDiv.classList.add("col-12","col-sm-6","col-md-3","col-lg-2","pr-0","pl-0","pl-sm-2","text-center")         
             const songImg = document.createElement("img")
             songImg.src= song.album.cover_big
             songImg.classList.add("img-fluid","albumImg")
+            songImg.addEventListener("click",function(event) {
+            songAudio.src=`${song.preview}`})
+
             songDiv.appendChild(songImg)
             const songPar = document.createElement("p")
             songPar.classList.add("title","text-center","mt-4","mb-1","mt-md-2")
             songPar.innerText= song.title
             songDiv.appendChild(songPar)
             row.appendChild(songDiv)
-
         }
         main.classList.remove("d-none")
       })
       .catch(err => {
         const row = document.querySelector("#row")
-        row.innerText = "Cannot load the books list"
+        row.innerText = "Cannot load the songs list"
         console.log("THIS IS THE CATCH CLAUSE", err)
-        // main.classList.add("d-none")
+       
     })
 }
+
+
