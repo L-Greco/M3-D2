@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- My personal CSS Link  -->
+     <link rel="stylesheet" href="artist.css"> 
+     <link rel="stylesheet" href="footer.css"> 
+     <link rel="stylesheet" href="album.css"> 
+     <!--  Font awsome link for the icons  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" 
+      crossorigin="anonymous"
+    /> 
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://use.typekit.net/kqk7nwe.css%22%3E"/>
+    <title>Artist Page</title>
+  </head>
+  <body >
+    <!----------------------------------------------------------------------- BOTTOM NAV BAR--------------------------------------------------------------------------------------------->
+    <ul class="d-flex d-sm-none nav justify-content-between bottom_navbar pt-4 z1 px-5" style="width: 100%;">
+      <li class="nav-item text-center">
+          <i class="fas fa-home" style="color:rgb( 211, 211, 211);"></i>
+        <a class="nav-link active" href="home.html"></a>
+      </li>
+      <li class="nav-item text-center">
+          <i class="fas fa-search" style="color:rgb( 211, 211, 211);"></i>
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item text-center">
+          <i class="fas fa-grip-lines-vertical" style="color:rgb( 211, 211, 211);"></i>
+        <a class="nav-link" href="#"></a>
+      </li>
+    </ul>
+
+ <!----------------------------------------------------------------------- SIDE NAV BAR --------------------------------------------------------------------------------------------->
+  <div class=" container-fluid mx-0 px-0 " style="height: 100vh;">
+		 <div class="row mx-0" style="height: 100vh;">
+      <div class="col-2 align-content-center px-0 d-none d-sm-block">
+				<div class=" vertical_navbar h-100 d-flex flex-column">
+					<ul class="nav flex-column">
+						<li class="nav-item mt-4 ">
+							<a class="nav-link navbar-brand px-auto  " href=""
+								><img
+                class="img-fluid "
+									src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
+									alt="HomePage_Logo"
+									height="40"
+							/></a>
+						</li>
+						<li class="nav-item mt-3 pl-3">
+							<a class="nav-link mt-1" href="home.html"
+								><div class="d-inline mr-2"><i class="fas fa-home " ></i></div>
+                <br class="d-block d-md-none">
+								Home</a
+							>
+						</li>
+						<li class="nav-item pl-3">
+							<a class="nav-link mt-1" href="#"
+								><div class="d-inline mr-2">
+									<i class="fas fa-search"></i>
+								</div>
+								Search</a
+							>
+						</li>
+						<li class="nav-item pl-3">
+							<a class="nav-link mt-1" href="#"
+								><div class="d-inline mr-2">
+									<i class="fas fa-grip-lines-vertical"></i>
+								</div>
+                <br class="d-block d-md-none">
+								Your Library</a
+							>
+						</li>
+					</ul>
+
+					<div class=" try d-none d-lg-block" style="position: absolute; bottom:15%;left: 0;">
+						<ul class="px-1">
+							<li class="nav-item">
+								<a class="nav-link " href="#"
+									><div class="d-inline  text-center">
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+									Install App</a
+								>
+                
+							</li>
+              
+						</ul>
+						<hr />
+            
+					</div>
+           <div class="d-none d-lg-block" style="position: absolute;bottom: 14%;left: 2%;"> <img class=" mx-2" style="height: 2.1rem;width: 2.1rem;" src="https://www.nj.com/resizer/zovGSasCaR41h_yUGYHXbVTQW2A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg" class="img-fluid rounded" alt="">
+                  <span style="font-size: 0.7rem;font-weight: 700;">Diego "Ziba" Banovaz </span> </div>
+				</div>
+        </div>
+                <div class="col-10 mx-auto px-0 mx-sm-0 no-gutters">
+                    <!----------------------------------------------------------------------- HEADER FOR SMALL SCREEN---------------------------------------------------------------------------------------------->
+    <div id="header" class="d-block d-sm-none container-fluid z1 position-fixed   "style="min-height: 8vh;background-color:#121212;top:0;left:0;" >  
+      <div class="row  z1  d-flex align-items-center  "style="height:4rem;" >
+        <div  class=" col-12 mx-auto z1 d-flex flex-column justify-content-center" >         
+          <div class="d-flex justify-content-center "> 
+              <button type="button" class="btn btn-outline-light  mr-3 border-0 " style="background-color:rgb(29, 185, 84) ;">PLAY</button>
+              <button type="button" class="btn btn-outline-light  mr-3 darkBtn " >FOLLOW</button>
+              <i class="fas fa-ellipsis-h text-center pt-1"></i>
+          </div>    
+        </div>
+         <div class="  d-flex container-fluid  justify-content-center  z1"style="color: white;" >     
+            <span id="over1" onclick="click1()" class="mr-2 mr-sm-3 highlight "> OVERVIEW</span>
+            <span id="related2" onclick="click2()" class="mr-2 mr-sm-3 highlight ">RELATED ARTISTS</span>
+            <span id="about3" onclick="click3()" class=" highlight ">ABOUT</span>
+         </div>          
+     </div>     
+   </div>
+ <!----------------------------------------------------------------------- HEADER FOR LARGER VIEWPORTS---------------------------------------------------------------------------------------->
+    
+    <div id="header" class="d-none d-sm-block container-fluid  position-relative header overflow-hidden " style="height: inherit;">
+     <img src="https://www.queenonline.com/global/uploads/86.jpg" class="bg-image">
+      <div class="row  z1  d-flex align-items-center  "style="height: inherit" >
+       <div  class=" col-6 mx-auto z1 d-flex flex-column justify-content-center" style="min-height: 40vh">    
+          <p class=" pNumber text-center ">33,000,575 MONTLY LISTENERS</p>
+          <h1 class="h1Artist text-center ">Queen</h1>
+          <div class="d-flex justify-content-center   mt-3"> 
+              <button type="button" class="btn btn-outline-light  mr-2 border-0 " style="background-color:rgb(29, 185, 84) ;">PLAY</button>
+              <button type="button" class="btn btn-outline-light  mr-3 darkBtn " >FOLLOW</button>
+              <i class="fas fa-ellipsis-h text-center pt-1"></i>
+          </div>    
+       </div>
+         <div class="  d-none d-sm-flex container-fluid  justify-content-center z1"style="color: white; position:absolute ;bottom: 1.7rem;left:-1rem" >     
+            <span id="over10" onclick="click1()" class="mr-2 mr-sm-3  highlight z1  ">OVERVIEW</span>
+            <span id="related20" onclick="click2()" class="mr-2 mr-sm-3  highlight ">RELATED ARTISTS</span>
+            <span id="about30" onclick="click3()" class=" highlight ">ABOUT</span>
+         </div>          
+     </div>     
+    </div>
+
+<!----------------------------------------------------------------------------- MAIN SECTION (ALBUMS)-------------------------------------------------------------------------------------------->
+   <main id="overview" class="mainMarg px-0  mx-0  px-lg-5 mx-lg-5">
+       <div class="container album-container  ">
+         <h2 class="albums mt-5 pt-4 pt-sm-0 mb-2 m-sm-2  ">Albums</h2>
+           <div class="row mt-0 mt-sm-4" >              
+               <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 "> 
+                 <a href="album.html">
+                 <img src="https://images-na.ssl-images-amazon.com/images/I/91Ph%2BuTyyxL._AC_SX679_.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+                 <p class="title text-center mt-4 mb-1 mt-md-2"> Bohemian Rhapsody (The Original Soundtrack)</p>
+                 <p class=" text-center artist"> Queen</p>
+               </a>
+               </div>
+               <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/On_Air_%28album%29.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+                 <p class="title text-center mt-4 mb-1 mt-md-2"> On Air</p>
+                 <p class=" text-center artist"> Queen</p>
+               </div>
+               <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2">
+                 <img src="https://discobole.gr/images/thumbnails/465/465/detailed/122/A_NIGHT_AT_THE_ODEON.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+                 <p class="title text-center  mt-4 mb-1 mt-md-2"> A Night At The Odeon</p>
+                 <p class=" text-center artist"> Queen</p>
+               </div>
+               <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+                 <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+                 <p class="title text-center mt-4 mb-1 mt-md-2"> Live At The Rainbow</p>
+                 <p class=" text-center artist"> Queen</p>
+               </div>
+               <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+                 <img src="https://discobole.gr/images/thumbnails/465/465/product/64/queen_live_at_the_rainbow.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+                 <p class="title text-center mt-4 mb-1 mt-md-2"> Live At The Rainbow (Deluxe)</p>
+                 <p class=" text-center artist"> Queen</p>
+               </div>
+               <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+                 <img src="https://upload.wikimedia.org/wikipedia/el/thumb/a/aa/Queen_-_Hungarian_Rhapsody.jpg/220px-Queen_-_Hungarian_Rhapsody.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+                 <p class="title text-center  mt-4 mb-1 mt-md-2"> Hungarian Rhapsody (Live in Budapest/1986)</p>
+                 <p class=" text-center artist"> Queen</p>
+               </div>
+           </div>
+           <div class="row mt-4">              
+             <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+               <img src="https://images-na.ssl-images-amazon.com/images/I/718Tl9GcmEL._SX355_.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+               <p class="title text-center mt-4 mb-1 mt-md-2"> The Cosmos Rocks (+ Paul Rodgers)</p>
+               <p class=" text-center artist"> Queen</p>
+             </div>
+             <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2">
+               <img src="https://secure.img1-fg.wfcdn.com/im/15765747/resize-h600-w600%5Ecompr-r85/3268/32686551/Queen+%2527Live+at+Wembley%2527+Album+Cover+Framed+Wall+art.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+               <p class="title text-center mt-4 mb-1 mt-md-2">Live At Wembley Stadium</p>
+               <p class=" text-center artist"> Queen</p>
+             </div>
+             <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2">
+               <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Returnofthechampions.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+               <p class="title text-center  mt-4 mb-1 mt-md-2"> Return Of The Champions</p>
+               <p class=" text-center artist"> Queen</p>
+             </div>
+             <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+               <img src="https://img.discogs.com/nVAmyHtIaoy1qYk_W35IaOenPuQ=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2792506-1301243856.jpeg.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+               <p class="title text-center mt-4 mb-1 mt-md-2"> Live At The Bowl</p>
+               <p class=" text-center artist"> Queen</p>
+             </div>
+             <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+               <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Queen_News_Of_The_World.png" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+               <p class="title text-center mt-4 mb-1 mt-md-2"> News Of The World</p>
+               <p class=" text-center artist"> Queen</p>
+             </div>
+             <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 ">
+               <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Queen_The_Miracle.png/220px-Queen_The_Miracle.png" alt="Some Queen Album I Guess :D" class="img-fluid albumImg">
+               <p class="title text-center  mt-4 mb-1 mt-md-2"> The Miracle</p>
+               <p class=" text-center artist"> Queen</p>
+             </div>
+         </div>
+          
+       </div>
+   </main>
+   <main id="related" class="d-none mainMarg px-0  mx-0  px-lg-5 mx-lg-5">
+    <div class="container album-container  ">
+      <h2 class="d-none d-sm-block albums  mt-5 pt-4 pt-sm-0 mb-2 m-sm-2  ">Related Artists</h2>
+      <h2 class="d-block d-sm-none text-center mt-5 pt-4 ">Related Artists</h2>
+        <div class="row mt-0 mt-sm-4" >              
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center ">
+              <img src="https://s3.r29static.com/bin/entry/c36/340x408,85/2059585/image.webp" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle ">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> Freddie Mercury</p>          
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2 text-center">
+              <img src="https://pbs.twimg.com/profile_images/956225427135221765/oEPnGrkJ_400x400.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> Elton John</p>        
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center">
+              <img src="https://img.discogs.com/c-4g3iNqbcpuulaNpawjOoyVje0=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-8685628-1466594128-3723.jpeg.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center  mt-4 mb-1 mt-md-2"> Electric Light Orchestra</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center ">
+              <img src="https://pbs.twimg.com/profile_images/1095334210078830594/5R6X93ge_400x400.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> Aerosmith</p>             
+            </div>
+            <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center">
+              <img src="https://ychef.files.bbci.co.uk/1600x900/p01j3jyb.webp" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center mt-4 mb-1 mt-md-2"> David Bowie</p>
+              
+            </div>
+            <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center ">
+              <img src="https://pbs.twimg.com/profile_images/1346068274069573633/ejn6YsCP_400x400.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+              <p class="title text-center  mt-4 mb-1 mt-md-2"> The Who</p>
+              
+            </div>
+        </div>
+        <div class="row mt-4">              
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center ">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61WM3RGcyTL._AC_SL1000_.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> Kiss</p>
+            
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0  pl-sm-2 text-center">
+            <img src="https://www.millerbarondess.com/wp-content/uploads/2020/03/JOURNEYLOGO-e1617391358894.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2">Journey</p>
+            
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center">
+            <img src="https://www.rollingstone.com/wp-content/uploads/2020/10/van-halen-charts.jpg?resize=1800,1200&w=1200" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center  mt-4 mb-1 mt-md-2"> Van Halen</p>
+            
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Supertramp1971.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2"> Supertramp</p>
+           
+          </div>
+          <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center">
+            <img src="https://www.rockrooster.gr/wp-content/uploads/2017/07/Led-Zeppelin.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center mt-4 mb-1 mt-md-2">Led Zeppelin</p>
+            
+          </div>
+          <div class="d-none d-lg-block col-12 col-sm-6 col-md-3 col-lg-2 pr-0 pl-0 pl-sm-2 text-center ">
+            <img src="https://i.pinimg.com/originals/bb/f4/a9/bbf4a9238cd7133b6d9c842ec25e0658.jpg" alt="Some Queen Album I Guess :D" class="img-fluid albumImg rounded-circle">
+            <p class="title text-center  mt-4 mb-1 mt-md-2"> Toto</p>
+            
+          </div>
+      </div>
+       
+    </div>
+</main>
+   <main id="about" class="mainMarg px-0  mx-0  px-lg-5 mx-lg-5 d-none">
+        <h2> Queen</h2>
+        <p>Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.
+
+          Before forming Queen, May and Taylor had played together in the band Smile. Mercury was a fan of Smile and encouraged them to experiment with more elaborate stage and recording techniques. He joined in 1970 and suggested the name "Queen". Deacon was recruited in February 1971, before the band released their eponymous debut album in 1973. Queen first charted in the UK with their second album, Queen II, in 1974. Sheer Heart Attack later that year and A Night at the Opera in 1975 brought them international success. The latter featured "Bohemian Rhapsody", which stayed at number one in the UK for nine weeks and helped popularise the music video format.
+          
+          The band's 1977 album News of the World contained "We Will Rock You" and "We Are the Champions", which have become anthems at sporting events. By the early 1980s, Queen were one of the biggest stadium rock bands in the world. "Another One Bites the Dust" from The Game (1980) became their best-selling single, while their 1981 compilation album Greatest Hits is the best-selling album in the UK and is certified nine times platinum in the US. Their performance at the 1985 Live Aid concert is ranked among the greatest in rock history by various publications. In August 1986, Mercury gave his last performance with Queen at Knebworth, England. In 1991, he died of bronchopneumonia—a complication of AIDS—and Deacon retired in 1997.</p>
+    </main>
+              </div>
+ <!----------------------------------------------------------------------------- PLAYER-------------------------------------------------------------------------------------------->
+              <nav class="d-none d-sm-block fixed-bottom bg-grey px-2 pt-2 pb-1">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="d-flex">
+                      <div class="ml-2 mr-2">
+                        <img class="cover-sm" src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg" alt="" />
+                      </div>
+                      <div class="d-flex">
+                        <div class="max-height">
+                          <p class="small-white-text">The house of the rising sun</p>
+                          <p class="smallest-grey-text">The Doors</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center icon-grey-text">
+                        <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
+                        <i class="far fa-window-maximize d-none d-lg-block"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="row pt-1 pb-0">
+                      <div class="col-12 pb-2 d-flex justify-content-center">
+                        <div class="d-flex px-4 justify-content-between align-items-center icon-grey-text">
+                          <i class="fas fa-random mx-2"></i>
+                          <i class="fas fa-step-backward mx-2"></i>
+                          <div class="play-pause mx-2">
+                            <i class="far fa-play-circle icon-grey-lg mx-2"></i>
+                          </div>
+                          <i class="fas fa-step-forward mx-2"></i>
+                          <i class="fas fa-redo-alt mx-2"></i>
+                        </div>
+                      </div>
+            
+                      <div class="col-12 to-bottom d-flex justify-content-center align-items-center">
+                        <p class="smallest-grey-text mr-1 current-time">00.00</p>
+                        <input type="range" min="1" max="100" value="0" class="slider" />
+                        <p class="smallest-grey-text ml-1 total-duration">04.16</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex justify-content-end align-items-center text-right icon-grey-text">
+                    <i class="fas fa-list mx-1"></i>
+                    <i class="far fa-window-restore mx-1"></i>
+                    <i class="fas fa-volume-up mx-1"></i>
+                    <div class="line-sm mr-2 ml-1"></div>
+                  </div>
+                </div>
+              </nav>
+              <nav style="position:fixed;bottom:7.7%;left:0;width: 100%;" class=" d-sm-none text-center bg-grey">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="d-flex">
+                      <div class="ml-2 mr-2">
+                        <img class="cover-sm" src="https://m.media-amazon.com/images/I/812nvM0bG-L._SS500_.jpg" alt="" />
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="small-white-text text-center">The house of the rising sun</p>
+                          <p class="smallest-grey-text">The Doors</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center icon-grey-text">
+                        <i class="far fa-heart pl-3 pr-3 d-none d-lg-block"></i>
+                        <i class="far fa-window-maximize d-none d-lg-block"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 d-flex justify-content-end align-items-center">
+                    <i class="far fa-heart mx-2 icon-grey-lgs"></i>
+                    <div class="play-pause mr-3 ml-4 icon-grey-lg">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+              </nav>
+        
+  
+
+  
+  
+  </script>
+    <script src="script.js"></script>
+    <script src="album.js"></script>
+
+
+
+    
+<!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- Font Awesome script -->
+    <script
+      src="https://kit.fontawesome.com/ee7b600ed4.js"
+      crossorigin="anonymous"
+    >
+  </script>
+    <!----------------------------------------------------------------------------- MINE JS-------------------------------------------------------------------------------------------->
+    <script>
+        const mainOverview = document.getElementById("overview")
+        const mainRelated = document.getElementById("related")
+        const mainAbout = document.getElementById("about")
+        const spanOverview = document.getElementById("over1")
+        const spanOverview1 = document.getElementById("over10")
+        const spanRelated = document.getElementById("related2")
+        const spanRelated1 = document.getElementById("related20")
+        const spanAbout = document.getElementById("about3")
+        const spanAbout1 = document.getElementById("about30")
+        const click1 = function () {
+          spanOverview.classList.add("underline")
+          spanOverview1.classList.add("underline")
+          spanRelated.classList.remove("underline")
+          spanRelated1.classList.remove("underline")
+          spanAbout.classList.remove("underline")
+          spanAbout1.classList.remove("underline")
+
+          mainOverview.classList.remove("d-none")
+          mainOverview.classList.add("d-block")
+
+          mainRelated.classList.remove("d-block")
+          mainRelated.classList.add("d-none")
+          
+          mainAbout.classList.remove("d-block")
+          mainAbout.classList.add("d-none")        
+        }
+        const click2 = function () {
+          spanOverview.classList.remove("underline")
+          spanOverview1.classList.remove("underline")
+          spanRelated.classList.add("underline")
+          spanRelated1.classList.add("underline")
+          spanAbout.classList.remove("underline")
+          spanAbout1.classList.remove("underline")
+
+          mainOverview.classList.remove("d-block")
+          mainOverview.classList.add("d-none")
+
+          mainRelated.classList.remove("d-none")
+          mainRelated.classList.add("d-block")
+
+          mainAbout.classList.remove("d-block")
+          mainAbout.classList.add("d-none")   
+
+        }
+        const click3 = function () {
+          spanOverview.classList.remove("underline")
+          spanOverview1.classList.remove("underline")
+          spanRelated.classList.remove("underline")
+          spanRelated1.classList.remove("underline")
+          spanAbout.classList.add("underline")
+          spanAbout1.classList.add("underline")
+
+          mainOverview.classList.remove("d-block")
+          mainOverview.classList.add("d-none")
+
+          mainRelated.classList.remove("d-block")
+          mainRelated.classList.add("d-none")
+
+          mainAbout.classList.remove("d-none")
+          mainAbout.classList.add("d-block")       
+        }
+    </script>
+  </body>
+</html>

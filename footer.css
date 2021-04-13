@@ -1,0 +1,111 @@
+.red-bor {
+  border: 1px solid red;
+}
+
+.bg-grey {
+  background-color: rgb(46, 46, 46);
+}
+
+.fixed-bottom p {
+  margin: 0px;
+}
+
+.icon-grey-text {
+  font-weight: 600;
+  color: rgb(170, 170, 170);
+  font-size: 12px;
+}
+
+.icon-grey-md {
+  font-weight: 600;
+  color: rgb(196, 196, 196);
+  font-size: 10px;
+  /* transform: translateY(5px); */
+  transform: scale(1.6) translateY(6px) translateX(-3px);
+}
+
+.icon-grey-lg {
+  font-weight: 600;
+  color: rgb(170, 170, 170);
+  font-size: 27px;
+}
+
+.icon-grey-lgs {
+  font-weight: 600;
+  color: rgb(170, 170, 170);
+  font-size: 18px;
+}
+
+.line {
+  height: 2px;
+  width: 70%;
+  background-color: rgb(87, 87, 87);
+  border-radius: 2px;
+}
+
+.line-sm {
+  height: 3px;
+  width: 23%;
+  background-color: rgb(170, 166, 166);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.to-bottom {
+  bottom: 0px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: black;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: opacity 0.2s;
+  width: 70%;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider:hover {
+  opacity: 1;
+  background-color: #1db954;
+}
+
+input:focus {
+  outline: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.far:hover {
+  color: rgb(201, 201, 201);
+  transform: scale(1.1);
+}
+
+.far:active {
+  color: rgb(136, 136, 136);
+}
+
+.fas:hover {
+  color: rgb(211, 211, 211);
+}
+
+.cover-sm {
+  height: 50px;
+  width: 50px;
+}
